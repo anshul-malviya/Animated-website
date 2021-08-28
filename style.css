@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  paddong: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.maxpixel.net/static/photo/1x/Bird-Reflection-Flamenco-Nature-Feathers-Flamingo-5527232.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 160px;
+  cursor: pointer;
+  animation: movedown 1s linear 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.cart {
+  width: 40px;
+  animation: movedown 1s linear 1;
+  animation-delay: 3s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+nav {
+  flex: 1;
+  padding-left: 60px;
+  animation: movedown 1s linear 1;
+  animation-delay: 2s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+@media (max-width:360px) {
+  nav ul li {
+    display: none;
+  }
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 450;
+}
+
+nav ul li a:hover {
+  color: #76d7c4;
+}
+
+.content h1 {
+  font-size: 60px;
+  font-weight: 100;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+@media (max-width:360px) {
+  .content h1 {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+}
+
+.content p {
+  font-size: 20px;
+  color: grey;
+}
+
+@media (max-width:360px) {
+  .content p {
+    font-size: 15px;
+  }
+
+}
+
+.content {
+  margin-top: 10%;
+  margin-left: 10%;
+  animation: moveright 1s linear 1;
+  animation-delay: 4s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveright {
+  0% {
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.content .btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #76d7c4, #ff77cd);
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-decoration: none;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  color: black;
+}
+
+.arrow-icons {
+  margin-top: 40px;
+  display: flex;
+}
+
+.arrow-icons img {
+  width: 35px;
+  margin-right: 25px;
+}
+
+.feature-img {
+  width: 500px;
+  height: 90%;
+  position: absolute;
+  right: 110px;
+  bottom: -30px;
+  opacity: 0.8;
+  border-radius: 20px;
+  box-shadow: 2px 2px grey;
+  animation: zoomin 1s linear 1;
+  animation-delay: 5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width:360px) {
+  .feature-img {
+    width: 250px;
+    height: 45%;
+    position: absolute;
+    right: 30px;
+  }
+
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(0.5);
+    visibility: visible;
+  }
+
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+.social-links {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -80px;
+  bottom: 140px;
+  animation: moveup 1s linear 1;
+  animation-delay: 6s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.social-links a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: grey;
+  font-size: 14px;
+}
+
+@media (max-width:360px) {
+  .social-links a {
+    font-size: 12px;
+    padding-right: 8px;
+  }
+
+}
+
+@keyframes moveup {
+  0% {
+    transform: translateY(100px) rotate(-90deg);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(0) rotate(-90deg);
+    visibility: visible;
+
+  }
+}
